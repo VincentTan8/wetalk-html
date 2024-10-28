@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 /********** Template CSS **********/
 :root {
     --primary: #E4F2FE;
@@ -324,7 +330,10 @@
 }
 
 .bg-img {
+    width: 100%;
+    height: auto;
     background: url(../img/wetalk/background-img.png) center top no-repeat;
+    background-size: cover;
 }
 
 .div-rounded {
