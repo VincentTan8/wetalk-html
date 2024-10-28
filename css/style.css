@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 /********** Template CSS **********/
 :root {
     --primary: #E4F2FE;
@@ -323,8 +329,20 @@
     margin-right: 15px;
 }
 
+.helvetica {
+    font-family: Helvetica, sans-serif;
+}
+
+.emboss {
+    box-shadow: 0 0 10px #E5F0FE;
+;
+}
+
 .bg-img {
+    width: 100%;
+    height: auto;
     background: url(../img/wetalk/background-img.png) center top no-repeat;
+    background-size: cover;
 }
 
 .div-rounded {
