@@ -6,10 +6,10 @@
 
 /********** Template CSS **********/
 :root {
-    --primary: #E4F2FE;
+    --primary: #FFAC00;
     --light: #F3F6F8;
     --dark: #0E2E50;
-    --hover: #9dd0fc;
+    --hover: #FFAC00;
 }
 
 
@@ -108,12 +108,12 @@
 }
 
 .nav-link:hover {
-    color: #0e0e0e
+    color: var(--primary)
 }
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
-    color: #0e0e0e;
+    color: var(--hover);
 }
 
 .sticky-top.navbar {
@@ -207,7 +207,7 @@
         height: 2px;
         bottom: 10px;
         left: 0;
-        background: #0e0e0e;
+        background: var(--primary);
         opacity: 0;
         transition: .5s;
     }
@@ -253,6 +253,18 @@
     border-left: 1px solid black;
     height: 24px;
     margin: 0px 15px;
+}
+
+.dropdown-toggle-icon::after {
+    display: inline-block;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+    box-sizing: border-box;
 }
 
 @media (min-width: 992px) {
@@ -396,6 +408,12 @@
     background-color: #fff;
     background-clip: border-box;
     border-radius: 1rem;
+}
+
+.carousel-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
 /*** Hero Header ***/
