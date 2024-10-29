@@ -357,6 +357,13 @@
     background-size: cover;
 }
 
+.educ-img {
+    width: 100%;
+    height: auto;
+    background: url(../img/wetalk/bg-blue.png) center top no-repeat;
+    background-size: cover;
+}
+
 .div-rounded {
     border-radius: 1rem;
 }
