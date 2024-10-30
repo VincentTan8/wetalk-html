@@ -1,6 +1,15 @@
 body {
     font-family: Helvetica;
 }
+
+.bg-study-tour-gains {
+    width: auto;
+    height: auto;
+    background: url(../img/wetalk/Contact-us.png) center top no-repeat;
+    background-size: cover;
+    bottom: 0;
+}
+
 .learning-card {
     padding: 2rem;
     border-radius: 10px;
@@ -14,13 +23,16 @@ body {
 .bg-blue { background-color: #E3F2FD; }
 .bg-orange { background-color: #FFF3E0; }
 .color-one {
-    color: #FFDF8D;
+    /* color: #FFDF8D; */
+    background: linear-gradient(340deg, #ffdf8d16, #FFC371);
 }
 .color-two {
-    color: #B2F3CE;
+    /* color: #B2F3CE; */
+    background: linear-gradient(340deg, #b2f3ce0b, #67D39E);
 }
 .color-three {
-    color: #CDE7FF;
+    /* color: #CDE7FF; */
+    background: linear-gradient(340deg, #cde7ff25, #7ABFFF);
 }
 .learning-card img {
     width: 180px;
@@ -72,11 +84,16 @@ body {
     right: 10px;
     bottom: -20px;
     z-index: -1;
+
+    color: transparent; /* Required to make the gradient visible */
+    -webkit-background-clip: text;
+    background-clip: text;
 }
 
 .advantage-item {
+    padding: 0 0 13rem 0;
     position: relative;
-    padding: 20px;
+    /* padding: 20px; */
     text-align: left;
     bottom: 0;
     z-index: 1;
