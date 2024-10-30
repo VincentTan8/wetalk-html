@@ -89,6 +89,11 @@
     border-radius: 50px;
 }
 
+.block-link {
+    display: block; 
+    text-decoration: none; 
+    color: inherit;
+}
 
 /*** Navbar ***/
 .navbar .navbar-nav .nav-link {
@@ -362,9 +367,12 @@
     font-family: Helvetica, sans-serif;
 }
 
+.playfair {
+    font-family: Playfair Display;
+}
+
 .emboss {
     box-shadow: 0 0 10px #E5F0FE;
-;
 }
 
 .bg-img {
@@ -388,6 +396,12 @@
 .content {
     display: flex;
     flex-wrap: wrap;
+}
+
+.thumbnail-educ {
+    width: 160px;
+    height: 190px;
+    object-fit: cover;
 }
 
 .card-teacher {
