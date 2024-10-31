@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>English Classroom</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="educ-img">
+        <!-- White Rounded Div (after navbar) -->
+        <div class="container-xxl p-0" style="background-color: transparent;">
+            <!-- Spinner Start -->
+            <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+                <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </div>
+            <!-- Spinner End -->
+
+
+            <!-- Navbar & Hero Start -->
+            <div class="container-xxl position-relative p-0">
+                <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-1 py-3 py-lg-0" style="justify-content: center;">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav py-0">
+                            <div class="nav-item dropdown">
+                                <a href="courses.html" class="nav-link dropdown-toggle-icon">Courses</a>
+                                <div class="dropdown-menu m-0">
+                                    <a href="" class="dropdown-item">English</a>
+                                    <a href="" class="dropdown-item">Chinese</a>
+                                    <a href="" class="dropdown-item">Philosophy</a>
+                                    <a href="" class="dropdown-item">Science</a>
+                                </div>
+                            </div>
+                            <div class="nav-item dropdown">
+                                <a href="about.html" class="nav-link dropdown-toggle-icon">About WeTalk</a>
+                                <div class="dropdown-menu m-0">
+                                    <a href="about.html" class="dropdown-item">History</a>
+                                    <a href="about.html" class="dropdown-item">Campus</a>
+                                    <a href="about.html" class="dropdown-item">Charity</a>
+                                </div>
+                            </div>
+                            <div class="nav-item dropdown">
+                                <a href="eductour.html" class="nav-link dropdown-toggle-icon">Educational Tours</a>
+                                <div class="dropdown-menu m-10">
+                                    <a href="" class="dropdown-item">Study and Tour</a>
+                                    <a href="" class="dropdown-item">Study Abroad</a>
+                                </div>
+                            </div>
+                            <a href="" class="nav-item nav-link">News</a>
+                            <a href="" class="nav-item nav-link">Resources</a>
+
+                            
+                        </div>
+                    </div>
+
+                    <a href="index.html" class="navbar-brand d-flex align-items-center">
+                        <img src="img/wetalk/wetalk-logo.png" alt=""
+                                style="width: auto;">
+                    </a>
+
+                    <div class="search-input" style="opacity: 0;">
+                        <form id="search" action="#">
+                            <input type="text" placeholder="Search" id='searchText' name="searchKeyword" onkeypress="handle" />
+                            <i class="fa fa-search"></i>
+                        </form>
+                    </div>  
+
+                    <!-- Language Selector -->
+                    <div class="language-selector d-flex align-items-center me-3 mx-1">
+                        <i class="bi bi-globe"></i>
+                        <span>English</span>
+                    </div>
+                    
+                    <!-- Log In and Sign Up Links -->
+                    <a href="" class="nav-item nav-link">Log In</a>
+                    <div class="navbar-divider"></div>
+                    <a href="" class="nav-link">Sign Up</a>
+                
+                </nav>
+
+                <div class="container-xxl page-header">
+                    <div class="container">
+                        <div class="row g-5 align-items-center">
+                            <div class="col-lg-6 text-center text-lg-start">
+                                <h1 class="mb-5 animated zoomIn" style="font-size: 53px;"><span style="color: #09CA91;">2024</span> English Classroom</h1>
+                                <h4 class="mb-5 animated zoomIn">Singapore English Classroom + Cultural and Natural Exploration Camp 6 Days, 5 Nights</h4>
+                                <p class="pb-3 animated zoomIn">You're a click away from experiencing the best educational tour!</p>
+                                <a href="" class="btn btn-green border-2 py-3 px-5 animated slideInRight" style="border-radius: 1rem;">Contact Us!</a>
+                            </div>
+                            <div class="col-lg-6 text-center text-lg-start">
+                                <img class="img-fluid animated zoomIn" src="img/wetalk/engclass-img.png" style="width: 85%; margin-left: 7rem;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Navbar & Hero End -->
+
+            <div class="div-rounded bg-white container">
+                <!-- Project Features -->
+                <div class="container-xxl">
+                    <div class="container">
+                        <div class="row g-5 align-items-center">
+                            <div class="col-lg-4 wow zoomIn" data-wow-delay="0.1s">
+                                <img class="img-fluid" src="img/wetalk/img-group-6.png">
+                            </div>
+                            <div class="col-lg-5 wow fadeInUp text-center" data-wow-delay="0.1s">
+                                <h2 class="mb-4 text-start">Project <span style="color: #09CA91;">Features</span></h2>
+                                <div class="row helvetica">
+                                    <div class="col-6 text-start">  
+                                        <p class="pb-3 animated zoomIn">
+                                            <img class="mx-2" src="img/wetalk/check-mark.png">
+                                            About Singapore
+                                        </p>  
+                                        <p class="pb-3 animated zoomIn">
+                                            <img class="mx-2" src="img/wetalk/check-mark.png">
+                                            Study Features
+                                        </p> 
+                                        <p class="pb-3 animated zoomIn">
+                                            <img class="mx-2" src="img/wetalk/check-mark.png">
+                                            Daily Learning
+                                        </p> 
+                                        <p class="pb-3 animated zoomIn">
+                                            <img class="mx-2" src="img/wetalk/check-mark.png">
+                                            Other Service
+                                        </p>                        
+                                    </div>
+                                    <div class="col-6 text-start">
+                                        <p class="pb-3 animated zoomIn">
+                                            <img class="mx-2" src="img/wetalk/check-mark.png">
+                                            Program Features
+                                        </p> 
+                                        <p class="pb-3 animated zoomIn">
+                                            <img class="mx-2" src="img/wetalk/check-mark.png">
+                                            WTS Gains
+                                        </p> 
+                                        <p class="pb-3 animated zoomIn">
+                                            <img class="mx-2" src="img/wetalk/check-mark.png">
+                                            Meals and Hotel
+                                        </p> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="div-rounded col wow fadeInUp text-center px-3 py-3 mx-4" data-wow-delay="0.1s" style="background-color: #EBEBEB;">
+                                <h6 class="mb-4 text-center">View other Itineraries</h6>
+                                <div class="row">
+                                    <p class="text-center justify-content-center" style="font-weight: bold; display: grid;">
+                                        <img class="thumbnail-educ" src="img/wetalk/ai-lab.png">
+                                        2024 Singapore
+                                    </p>
+                                    <span>Huawei AI Lab & STEM Technology Camp 6 DAYS , 5 NIGHTS</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Program Features -->
+                <div class="container-xxl text-center my-6" data-wow-delay="0.1s">
+                    <h3 class="mb-4 text-center wow animated slideInRight">About <span style="color: #09CA91;">Singapore</span></h3>
+                    <div class="row" data-wow-delay="0.1s">
+                        <img class="col card-custom wow zoomIn" src="img/wetalk/yellow.png">
+                        <img class="col card-custom wow zoomIn" src="img/wetalk/green.png">
+                        <img class="col card-custom wow zoomIn" src="img/wetalk/blue.png">
+                    </div>
+                </div>
+
+                <!-- Program Features -->
+                <div class="container-xxl text-center my-6 py-5" data-wow-delay="0.2s">
+                    <h3 class="mb-4 text-center wow animated slideInRight">Program <span style="color: #09CA91;">Features</span></h3>
+                    <div class="div-rounded px-4 py-4 gradient-background-yellow">
+                        <div class="row py-4 px-4">
+                            <div class="col-6">
+                                <div class="row">
+                                    <div class="col-2">
+                                        <div class="px-3 py-3 rounded-pill justify-content-center" style="background: #FDEBB4;">
+                                            <img class="img-fluid" src="img/wetalk/innovative.png">
+                                        </div>
+                                    </div>
+                                    <div class="col-9 text-start helvetica">
+                                        <h4 class="pb-3 wow animated zoomIn">
+                                            English Authentic Classroom Experience + Certificate Award
+                                        </h4>
+                                        <p class="pb-3 wow animated zoomIn">
+                                            Immerse yourself in an authentic English classroom experience, effortlessly enhancing your language skills while enjoying a unique learning atmosphere.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-2">
+                                        <div class="px-3 py-3 rounded-pill justify-content-center" style="background: #FDEBB4;">
+                                            <img class="img-fluid" src="img/wetalk/outdoor.png">
+                                        </div>
+                                    </div>
+                                    <div class="col-9 text-start helvetica">
+                                        <h4 class="pb-3 wow animated zoomIn">
+                                            Outdoor Classroom Adventures
+                                        </h4>
+                                        <p class="pb-3 wow animated zoomIn">
+                                            STEM courses play a significant role in cultivating children's comprehensive qualities and fostering academic thinking habits.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-2">
+                                        <div class="px-3 py-3 rounded-pill justify-content-center" style="background: #FDEBB4;">
+                                            <img class="img-fluid" src="img/wetalk/universal.png">
+                                        </div>
+                                    </div>
+                                    <div class="col-9 text-start helvetica">
+                                        <h4 class="pb-3 wow animated zoomIn">
+                                            Universal Studios Adventure
+                                        </h4>
+                                        <p class="pb-3 wow animated zoomIn">
+                                            Experience the best of both worlds at Universal Studios, where you can enjoy classic theme park attractions while immersing yourself in the rich cultural tapestry of Singapore. From the iconic scenes of movies like Jurassic Park, Indiana Jones, and Madagascar, you'll find a blend of Southeast Asian charm.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="row">
+                                    <div class="col-2">
+                                        <div class="px-3 py-3 rounded-pill justify-content-center" style="background: #FDEBB4;">
+                                            <img class="img-fluid" src="img/wetalk/world.png">
+                                        </div>
+                                    </div>
+                                    <div class="col-9 text-start helvetica">
+                                        <h4 class="pb-3 wow animated zoomIn">
+                                            World-Class School Visits
+                                        </h4>
+                                        <p class="pb-3 wow animated zoomIn">
+                                            Engage in top-notch cultural exchanges by visiting prestigious institutions like the National University of Singapore and Nanyang Technological University, immersing in the atmosphere of leading academic institutions.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-2">
+                                        <div class="px-3 py-3 rounded-pill justify-content-center" style="background: #FDEBB4;">
+                                            <img class="img-fluid" src="img/wetalk/cultural.png">
+                                        </div>
+                                    </div>
+                                    <div class="col-9 text-start helvetica">
+                                        <h4 class="pb-3 wow animated zoomIn">
+                                            Cultural and Artistic Journey in Singapore
+                                        </h4>
+                                        <p class="pb-3 wow animated zoomIn">
+                                            Embark on a cultural and artistic exploration of Singapore, visiting iconic landmarks and experiencing the unique local art and culture.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Study Features -->
+                <div class="container-xxl text-center mb-4 py-1" data-wow-delay="0.2s">
+                    <div class="div-rounded px-4 pt-4 gradient-background-blue">
+                        <div class="row px-4 pt-4">
+                            <div class="col-6">
+                                <h3 class="mb-4 py-3 text-start wow animated slideInRight">Study <span style="color: #09CA91;">Features</span></h3>
+                                <div class="row div-rounded bg-white">
+                                    <div class="col"></div>
+                                    <div class="col-10 pt-3">
+                                        <p class="py-3 text-center wow fadeInUp helvetica">The teacher graduated from UCL (University College London) and is seasoned educators with extensive experience teaching the International Baccalaureate (IB) curriculum.</p>
+                                    </div>
+                                    <div class="col"></div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <img class="img-fluid wow fadeInUp" src="img/wetalk/teachers.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--SMU Section-->
+                <div class="container-xxl" style="margin-top: 4rem;">
+                    <div class="container">
+                        <div class="row g-5 align-items-center">
+                            <div class="col-lg-6 wow fadeInUp text-center" data-wow-delay="0.1s">
+                                <h6 class="mb-4">Singapore Management University (SMU), abbreviated as SMU, is one of Asia's top universities, renowned internationally for its world-class research and excellence in teaching. Established in 2000, SMU's mission is to conduct cutting-edge research with global impact and to nurture leaders for the knowledge economy who are broad-based, creative, and entrepreneurial. SMU's education is known for its highly interactive, collaborative, and project-based learning approach.</h6>
+                                <a href="" class="btn btn-green border-2 py-3 px-5 animated slideInRight" style="border-radius: 1rem;">Learn More!</a>
+                            </div>
+                            <div class="col-lg-6 wow zoomIn" data-wow-delay="0.1s">
+                                <img class="img-fluid" src="img/wetalk/SMU-1.png">
+                                <div class="py-3" style="display: inline-flex; gap: 1rem;">
+                                    <img class="img-fluid w-50 " src="img/wetalk/SMU-2.png">
+                                    <img class="img-fluid w-50 " src="img/wetalk/SMU-3.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- SMU Section End -->
+
+                <div class="container-xxl text-center my-6" data-wow-delay="0.1s">
+                    <h3 class="mb-4 text-center"><span style="color: #09CA91;">WeTalk</span> Study Tour Gains</h3>
+                    <div class="row" data-wow-delay="0.1s">
+                        <img class="col card-custom wow zoomIn" src="img/wetalk/card-13.png">
+                        <img class="col card-custom wow zoomIn" src="img/wetalk/card-14.png">
+                    </div>
+                    <div class="row" data-wow-delay="0.1s">
+                        <img class="col card-custom wow zoomIn" src="img/wetalk/card-15.png">
+                        <img class="col card-custom wow zoomIn" src="img/wetalk/card-16.png">
+                    </div>
+                    <a href="" class="btn btn-green border-2 py-3 px-5 my-4 wow animated slideInRight" style="border-radius: 1rem;">Try Now!</a>
+                </div>
+
+                <!-- Timeline Start -->
+                <div class="timeline helvetica">
+                    <!-- Day 1 -->
+                    <div class="timeline-event right wow fadeInUp">
+                        <div class="container-xxl">
+                            <div class="row align-items-start">
+                                <div class="col-md-6 text-start">
+                                    <h4 class="event-title"><span class="event-day">DAY 01</span> Embark on the Singapore Study Tour</h4>
+                                    <div class="text-start">
+                                        <p><strong>Location:</strong> Shanghai, China - Singapore</p>
+                                        <p>Arrival at Singapore Changi Airport, immigration procedures, brief welcome ceremony at the airport, itinerary introduction, and delivery of wetalk customized shopping bags</p>
+                                        <p><strong>Dinner:</strong> Welcome Dinner</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 text-center">
+                                    <img src="./img/eng-classroom/Group 422.png" alt="Image 1" class="img-fluid" style="max-height: 40rem; width: auto;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Day 2 -->
+                    <div class="timeline-event left wow fadeInUp">
+                        <div class="container-xxl">
+                            <div class="row align-items-start">
+                                <div class="col-md-6 text-start">
+                                    <h4 class="event-title" onclick="toggleContent(this)"><span class="event-day">DAY 02</span> Fun Class</h4>
+                                    <p><span class="event-subtitle">Fun English Class - Lesson 1</span></p>
+                                    <p><strong>Course Theme:</strong> Understanding Singapore's Multiculturalism and Historical Background</p>
+                                    <p><strong>English Knowledge:</strong> Causal Relationships and Past Tense</p>
+                                    <p><strong>Activity expansion:</strong> A quiz competition where students are divided into groups to answer questions about Singapore's cultural history that the teacher only asks orally. Exercise students' ability to listen to English.</p>
+                                    <p><strong>Lunch:</strong> SMU Campus Dining</p>
+                                    <p><strong>Afternoon Study Content:</strong> Visit landmark buildings such as the Merlion, Elizabeth Park, and admire the exterior of the Parliament Building, the City Hall, the Supreme Court, Mount Faber, overlook the panoramic view of Singapore, enjoy the scenery of the outlying islands, and admire the busy harbor scenery of the world along the way.</p>
+                                    <p><strong>Evening Homework:</strong> Organize the daily itinerary and get to know the beauty of Singapore for the first time</p>
+                                </div>
+                                <div class="col-md-6 text-center">
+                                    <img src="./img/eng-classroom/Group 423.png" alt="Image 2" class="img-fluid" style="max-height: 40rem; width: auto;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Day 3 -->
+                    <div class="timeline-event right wow fadeInUp">
+                        <div class="container-xxl">
+                            <div class="row align-items-start">
+                                <div class="col-md-6 text-start">
+                                    <h4 class="event-title" onclick="toggleContent(this)"><span class="event-day">DAY 03</span> Fun Class</h4>
+                                    <p><span class="event-subtitle">Fun English Class - Lesson 2</span></p>
+                                    <p><strong>Course Theme:</strong> Singapore's long-term urban planning concept, looking to the future. English knowledge: Descriptive adjectives</p>
+                                    <p><strong>Activity Expansion:</strong> A quiz competition where students are divided into groups to answer questions about Singapore's cultural history that the teacher only asks orally. Exercise students' ability to listen to English.</p>
+                                    <p><strong>Lunch:</strong> SMU Campus Dining</p>
+                                    <p><strong><span class="event-subtitle">Afternoon Elite Student Visit Notes</span></strong></p>
+                                    <p>World renowned university - National University of Singapore</p>
+                                    <p><strong>Renowed Graduate School:</strong> NUS, the National University of Singapore, is a comprehensive university ranked 8th in the QS World Rankings and 1st in Asia, one of the world's top universities.</p>
+                                    <p><strong>Research Content:</strong> 1. Go to a national university and, under the guidance of current students, visit various characteristic teaching themed buildings, learn about advanced professional equipment on campus, and experience the rich academic atmosphere;
+                                                                          2. Understand the strong disciplines, admission requirements, admission processes, etc. of top universities, and provide decision-making references for studying abroad in Singapore.</p>
+                                    <p><strong><span class="event-subtitle">Study Tour</span></strong> - Getting to Know the Beauty of Singapore for the First Time</p>
+                                    <p><strong>Study Location:</strong> Cultural Journey</p>
+                                    <p><strong>Study Content:</strong> Visit Chinatown in Singapore, Chinatown, and learn about the early Chinese life and entrepreneurial history in Singapore. Traveling to Little India, the strong flavors of spices and jasmine, as well as the vibrant colors of sari silk, are dazzling and overwhelming.</p>
+                                    <p><strong>Evening Homework:</strong> Evening Homework</p>
+                                </div>
+                                <div class="col-md-6 text-center">
+                                    <img src="./img/eng-classroom/Group 424.png" alt="Image 2" class="img-fluid" style="max-height: 40rem; width: auto;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Day 4 -->
+                    <div class="timeline-event left wow fadeInUp">
+                        <div class="container-xxl">
+                            <div class="row align-items-start">
+                                <div class="col-md-6 text-start">
+                                    <h4 class="event-title" onclick="toggleContent(this)"><span class="event-day">DAY 04</span> Fun Class</h4>
+                                    <p><span class="event-subtitle">Fun English Class - Lesson 3</span></p>
+                                    <p><strong>Course Theme:</strong> Small Speakers</p>
+                                    <p><strong>English Knowledge:</strong> Speech Skills</p>
+                                    <p><strong>Activity Expansion:</strong> Divide into groups to complete poster design and give a speech presentation based on the knowledge learned. Each person will have 3-5 minutes.quiz competition where students are divided into groups to answer questions about Singapore's cultural history that the teacher only asks orally. Exercise students' ability to listen to English.</p>
+                                    <p><strong>Lunch:</strong> SMU Campus Dining</p>
+                                    <p><strong><span class="event-subtitle">Singapore</span> Botanic Gardens</strong></p>
+                                    <p>A Journey to World Heritage Sites - A Stereoscopic Natural Ecology Classroom</p>
+                                    <p><strong>Exploration Location:</strong> The oldest and most touching Singapore Botanical Garden, with a history of over a hundred years, is Singapore's first UNESCO World Heritage Site and an unmissable three-dimensional "plant ecology textbook"</p>
+                                    <p><strong>Experience Content:</strong> Multimedia interactive exhibition showcasing diverse plant heritage. Evening tour of Marina Bay Gardens in Singapore</p>
+                                    <p><strong>Evening Homework:</strong> Organize the itinerary and enrich the travel log.</p>
+                                </div>
+                                <div class="col-md-6 text-center">
+                                    <img src="./img/eng-classroom/Group 425.png" alt="Image 2" class="img-fluid" style="max-height: 40rem; width: auto;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Day 5 -->
+                    <div class="timeline-event right wow fadeInUp">
+                        <div class="container-xxl">
+                            <div class="row align-items-start">
+                                <div class="col-md-6 text-start">
+                                    <h4 class="event-title" onclick="toggleContent(this)"><span class="event-day">DAY 05</span> Movie Themed Class</h4>
+                                    <p><strong>Funny Film Theme Class: The first Universal Studios in Southeast Asia </strong>
+                                               Experience Universal Studios, Hollywood and Singapore, the largest film based fairyland in Asia. Students are guided by their teachers to play in the Transformers theme hall, Egypt mummy theme hall, etc.</p>
+                                    <p><strong>Research Objective:</strong> Accept group tasks, and each group must bring back the logo or introduction of the visiting theme museum.
+                                               In the evening, visit the beautiful Sentosa Island, stroll along the beach, and arrive at the southernmost point of Southeast Asia.</p>
+                                </div>
+                                <div class="col-md-6 text-center">
+                                    <img src="./img/eng-classroom/Group 426.png" alt="Image 2" class="img-fluid" style="max-height: 40rem; width: auto;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Day 6 -->
+                    <div class="timeline-event left wow fadeInUp">
+                        <div class="container-xxl">
+                            <div class="row align-items-start">
+                                <div class="col-md-6 text-start">
+                                    <h4 class="event-title" onclick="toggleContent(this)"><span class="event-day">DAY 06</span> Zoo + Return</h4>
+                                    <p><strong>Singapore Zoo:</strong> Adopting a fully open mode, it is one of the top ten zoos in the world. The park replaces fences with natural barriers to create a natural living environment for various animals. There are over 300 species and approximately 3050 animals living freely in a comfortable environment without artificial barriers, peacefully coexisting with tourists. Approximately 1.6 million domestic and foreign tourists visit each year.
+                                                                       The zoo covers an area of 28 hectares and houses 290 species of mammals, birds, and reptiles, with a total of over 3000 individuals; Among the many endangered animals displayed are the Komodo dragon, sleeping bear, golden monkey, and the world's largest social ape.</p>
+                                    <p><strong>Experience Content:</strong> 1. Actively learn words and understand their visual features, and better understand and memorize related vocabulary knowledge;
+                                                                            2. Record the answers by searching for signs and animal introductions within the park.</p>
+                                    <p><strong>Leaving Singapore and Returning Home</strong></p>
+                                </div>
+                                <div class="col-md-6 text-center">
+                                    <img src="./img/eng-classroom/Group 427.png" alt="Image 2" class="img-fluid" style="max-height: 40rem; width: auto;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Timeline End -->
+
+                <!-- Certificate Start -->
+                <div class="container mb-4">
+                    <div class="div-rounded mx-2 px-4 py-4" style="background-color: #916DFF;">
+                        <div class="row">
+                            <div class="col-5 pt-4 text-start wow slideInLeft">
+                                <h2 class="py-4" style="color: white;">Certificate</h2>
+                                <h5 style="color: white; padding-bottom: 4rem;">Singapore Management University (SMU) Certificate</h5>
+                                <img class="img-fluid wow zoomIn" src="img/wetalk/user-group.png">
+                            </div>
+                            <div class="col">
+                                <img class="img-fluid wow zoomIn" src="img/wetalk/cert-eng.png">
+                            </div>
+                            <div class="col">
+                                <img class="img-fluid wow slideInRight" src="img/wetalk/child.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Certificate End -->
+            </div>
+
+            <!-- Back to Top -->
+            <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+        </div>
+
+        <!-- Second Half -->
+        <div class="container-xxl p-0" style="background-color: transparent;">
+            <!--Review Start-->
+            <div class="div-rounded" style="background-color: #FEF1CB; margin-bottom: 3rem;">
+                <div class="row py-6">
+                    <div class="wow fadeInUp text-center col" data-wow-delay="0.1s">
+                        <h1 class="mb-4 text-center">What they say <span style="color: #09CA91;">about us.</span></h1>
+                    </div>              
+                </div>
+
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators" style="filter: invert(1) grayscale(100);">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="d-flex justify-content-center">
+                                <img src="img/wetalk/review-1.png" class="d-block w-50 div-rounded">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center">
+                                <img src="img/wetalk/review-2.png" class="d-block w-50 div-rounded">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center">
+                                <img src="img/wetalk/review-3.png" class="d-block w-50 div-rounded">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" style="filter: invert(1) grayscale(100);" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" style="filter: invert(1) grayscale(100);" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <!-- Review End -->
+        </div>
+
+        <!-- Footer Start -->
+        <div class="" style="background-color:#f8f9fa;">
+            <div class="carousel-container container-xxl">
+                <div class="col-12 text-center d-block m-auto">
+                    <h2 class="text-center" style="padding: 10rem 5rem 8rem 5rem; color: #b8b8b8; font-size: 3rem; font-weight: 200; font-family: Playfair Display;">Contact Us 联系我们</h2>
+                    <div id="addressCarousel" class="carousel slide d-flex" data-bs-ride="carousel" data-bs-interval="3000" style="padding-bottom: 5rem;">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active fw-light" style="height: 20rem;">
+                                <div class="row text-start w-100">
+                                    <div class="col-md-4 address-card d-flex flex-column">
+                                        <p class="fs-5 py-2" style="font-weight: 600!important;">Singapore (Headquarter) 新加坡 (总部)</p>
+                                        <p class="py-3"><span style="font-weight: 600!important;">Address 地址:</span> 402 Orchard Road #02-23/24, Delfi Orchard, Singapore 238876</p>
+                                        <p><span style="font-weight: 600!important;">Tel 电话:</span> +65 9758 2288</p>
+                                        <p><span style="font-weight: 600!important;">E-mail 邮箱:</span> service@wetalk.com</p>
+                                    </div>
+
+                                    <div class="col-md-4 address-card d-flex flex-column">
+                                        <p class="fs-5 py-2" style="font-weight: 600!important;">Xi'an, China 西安</p>
+                                        <p class="py-3"><span style="font-weight: 600!important;">Address 地址:</span> 1019, 10th Floor, Mei Yuan Lou Shang, No.118 South Huangguang Road, Yanta District, Xi'an, Shaanxi</p>
+                                        <p><span style="font-weight: 600!important;">Tel 电话:</span> +86 18165370116</p>
+                                        <p><span style="font-weight: 600!important;">E-mail 邮箱:</span> service@wetalk.com</p>
+                                    </div>
+
+                                    <div class="col-md-4 address-card d-flex flex-column">
+                                        <p class="fs-5 py-2" style="font-weight: 600!important;">Manila 马尼拉</p>
+                                        <p class="py-3"><span style="font-weight: 600!important;">Address 地址:</span> Units 2801 and 2817, 28th Floor, Park Triangle Corporate Plaza North Tower, 32nd Street corner 11th Avenue, Brgy. Bonifacio, Taguig, 1634 Metro Manila</p>
+                                        <p><span style="font-weight: 600!important;">Tel 电话:</span>+63 9171681680</p>
+                                        <p><span style="font-weight: 600!important;">E-mail 邮箱:</span> service@wetalk.com</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item fw-light" style="height: 20rem;">
+                                <div class="row text-start w-100">
+                                    <div class="col-md-4 address-card d-flex flex-column">
+                                        <p class="fs-5 py-2" style="font-weight: 600!important;">Taipei 台北</p>
+                                        <p class="py-3 "><span style="font-weight: 600!important;">Address 地址:</span> 2F, No. 10, Section 1, An-He Road, Da-an District, Taipei City 106, Taiwan</p>
+                                        <p><span style="font-weight: 600!important;">Tel 电话:</span>+886 227518111</p>
+                                        <p><span style="font-weight: 600!important;">E-mail 邮箱:</span> service@wetalk.com</p>
+                                    </div>
+
+                                    <div class="col-md-4 address-card d-flex flex-column">
+                                        <p class="fs-5 py-2" style="font-weight: 600!important;">Singapore (Headquarter) 新加坡 (总部)</p>
+                                        <p class="py-3"><span style="font-weight: 600!important;">Address 地址:</span> 402 Orchard Road #02-23/24, Delfi Orchard, Singapore 238876</p>
+                                        <p><span style="font-weight: 600!important;">Tel 电话:</span>+65 9758 2288</p>
+                                        <p><span style="font-weight: 600!important;">E-mail 邮箱:</span> service@wetalk.com</p>
+                                    </div>
+
+                                    <div class="col-md-4 address-card d-flex flex-column">
+                                        <p class="fs-5 py-2" style="font-weight: 600!important;">Xi'an, China 西安</p>
+                                        <p class="py-3 "><span style="font-weight: 600!important;">Address 地址:</span> 1019, 10th Floor, Mei Yuan Lou Shang, No.118 South Huangguang Road, Yanta District, Xi'an, Shaanxi</p>
+                                        <p><span style="font-weight: 600!important;">Tel 电话:</span> +86 18165370116</p>
+                                        <p><span style="font-weight: 600!important;">E-mail 邮箱:</span> service@wetalk.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="container-xxl" style="padding-top: 3rem; padding-bottom: 3rem;">
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="#" style="float: left;"><img src="./img/wetalk/wetalk-logo.png" class=""/></a>
+                </div>
+
+                <div class="col-md-6">
+                    <div style="float: right;">
+                        <a href="https://www.facebook.com/WeTalkSingapore/" target="_blank" class="text-dark me-3">
+                            <i class="fab fa-facebook fa-lg"></i>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCvJCo3FkTHxnedBgAvbWEGw" target="_blank" class="text-dark me-3">
+                            <i class="fab fa-youtube fa-lg"></i>
+                        </a>
+                        <a href="https://www.instagram.com/wetalk.sg/" target="_blank" class="text-dark me-3">
+                            <i class="fab fa-instagram fa-lg"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/wetalk-education-corp/" target="_blank" class="text-dark">
+                            <i class="fab fa-linkedin fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="text-center">
+                <p>Copyright © WeTalk International Education Pte. Ltd. 众语国际教育咨询有限公司 2024</p>
+            </div>
+        </footer>   
+        <!-- Footer End -->
+    </div>
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
