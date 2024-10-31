@@ -510,6 +510,85 @@
     padding: 12rem 0 6rem 0;
 }
 
+.timeline {
+    position: relative;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    /* left: 30px; */
+    left: 50%; /* Center the line horizontally */
+    bottom: 0;
+    width: 4px;
+    /* background-color: #ddd; */
+    border-left: 3px dashed #ddd; /* Dashed line */
+    transform: translateX(-50%); /* Shift the line back by half its width to perfectly center */
+}
+
+.timeline-event {
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+.timeline-event.visible {
+    opacity: 1;
+    transform: translateY(0); 
+}
+
+.timeline-event::before {
+    content: '';
+    position: absolute;
+    left: 50%; /* Center the dot horizontally */
+    /* left: 0; */
+    top: 0;
+    width: 12px;
+    height: 12px;
+    background-color: #09CA91;
+    border-radius: 50%;
+    transform: translateX(-50%); /* Shift the dot back by half its width to center */
+}
+
+.timeline-event.left .event-content {
+    text-align: left;
+}
+.timeline-event.right .event-content {
+    text-align: right;
+}
+.timeline-event.left .row {
+    flex-direction: row;
+}
+.timeline-event.right .row {
+    flex-direction: row-reverse;
+}
+
+.event-day {
+    color: #09CA91;
+    font-weight: bold;
+    cursor: pointer;
+}
+.event-subtitle {
+    color: #09CA91;
+}
+.event-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.event-content p {
+    margin-bottom: 0.5rem;
+}
+
+.event-image {
+    max-width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: rotate(-5deg);
+    margin-top: 1rem;
+}
+
 /* // `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) { 
 
