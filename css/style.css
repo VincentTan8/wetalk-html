@@ -466,6 +466,30 @@
     padding: 12rem 0 6rem 0;
 }
 
+/* // `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+
+    .timeline {
+        padding-left: 3rem; /* Adjust padding for smaller screens */
+    }
+
+    .timeline-event {
+        padding-left: 3rem; /* Adds space for the dot on the left */
+    }
+
+    /* Align dashed line to the left on smaller screens */
+    .timeline::before {
+        left: 3rem!important;
+        transform: none!important; /* Remove centering transform */
+    }
+
+    /* Align dot to the left on smaller screens */
+    .timeline-event::before {
+        left: -3px!important;
+        transform: none!important; /* Remove centering transform */
+    }
+}
+
 @media (max-width: 991.98px) {
     .hero-header {
         padding: 6rem 0 9rem 0;
@@ -474,6 +498,32 @@
     .page-header {
         padding: 6rem 0;
     }
+
+    .timeline {
+        padding-left: 3rem; /* Adjust padding for smaller screens */
+    }
+
+    .timeline-event {
+        padding-left: 3rem; /* Adds space for the dot on the left */
+    }
+
+    /* Align dashed line to the left on smaller screens */
+    .timeline::before {
+        left: 3rem!important;
+        transform: none!important; /* Remove centering transform */
+    }
+
+    /* Align dot to the left on smaller screens */
+    .timeline-event::before {
+        left: -3px!important;
+        transform: none!important; /* Remove centering transform */
+    }
+}
+
+
+/* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+    
 }
 
 .page-header .breadcrumb-item+.breadcrumb-item::before {

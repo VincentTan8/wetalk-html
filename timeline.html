@@ -35,34 +35,56 @@
     <style>
         .timeline {
             position: relative;
-            padding-left: 2rem;
         }
         .timeline::before {
             content: '';
             position: absolute;
             top: 0;
-            left: 30px;
+            /* left: 30px; */
+            left: 50%; /* Center the line horizontally */
             bottom: 0;
             width: 4px;
             /* background-color: #ddd; */
             border-left: 3px dashed #ddd; /* Dashed line */
+            transform: translateX(-50%); /* Shift the line back by half its width to perfectly center */
         }
         .timeline-event {
             position: relative;
             padding-left: 2rem;
             margin-bottom: 2rem;
         }
+
+        .timeline-event.visible {
+            opacity: 1;
+            transform: translateY(0); 
+        }
+
         .timeline-event::before {
             content: '';
             position: absolute;
-            left: 0;
+            left: 50%; /* Center the dot horizontally */
+            /* left: 0; */
             top: 0;
             width: 12px;
             height: 12px;
             background-color: #32CD32;
             border-radius: 50%;
-            margin-left: -6px;
+            transform: translateX(-50%); /* Shift the dot back by half its width to center */
         }
+
+        .timeline-event.left .event-content {
+            text-align: left;
+        }
+        .timeline-event.right .event-content {
+            text-align: right;
+        }
+        .timeline-event.left .row {
+            flex-direction: row;
+        }
+        .timeline-event.right .row {
+            flex-direction: row-reverse;
+        }
+
         .event-day {
             color: #32CD32;
             font-weight: bold;
@@ -74,27 +96,10 @@
             cursor: pointer;
         }
 
-        .event-content {
-            display: none; /* Initially hidden */
-            overflow: hidden;
-            transition: max-height 0.3s ease-out, opacity 0.3s ease;
-            max-height: 0;
-            opacity: 0;
-        }
-        .event-content.show {
-            display: block;
-            max-height: 1000px; /* Large enough to accommodate content */
-            opacity: 1;
-            transition: max-height 0.3s ease-in, opacity 0.3s ease;
-        }
         .event-content p {
             margin-bottom: 0.5rem;
         }
-
-        /* .event-content p {
-            margin-bottom: 0.5rem;
-        } */
-
+        
         .event-image {
             max-width: 100%;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -108,36 +113,40 @@
 
     <div class="timeline">
         <!-- Day 1 -->
-        <div class="timeline-event">
-            <span class="event-day" onclick="toggleContent(this)">DAY 01</span>
-            <h4 class="event-title" onclick="toggleContent(this)">Embark on the Singapore Study Tour</h4>
-            <div class="row event-content">
-                <div class="col-md-8">
-                    <p><strong>Location:</strong> Shanghai, China - Singapore</p>
-                    <p>Arrival at Singapore Changi Airport, immigration procedures, short welcome ceremony at the airport, itinerary introduction, and distribution of customized WeTalk shopping bags. Transfer to the hotel after airport pickup for check-in and rest (3 pm check-in).</p>
-                    <p><strong>Dinner:</strong> Welcome Dinner</p>
-                </div>
-                <div class="col-md-4">
-                    <img src="path/to/image1.jpg" alt="Image 1" class="event-image">
+        <div class="timeline-event right">
+            <div class="container-xxl">
+                <div class="row align-items-start">
+                    <div class="col-md-6 text-start">
+                        <h4 class="event-title"><span class="event-day">DAY 01</span> Embark on the Singapore Study Tour</h4>
+                        <div class="text-start">
+                            <p><strong>Location:</strong> Shanghai, China - Singapore</p>
+                            <p>Arrival at Singapore Changi Airport, immigration procedures, short welcome ceremony at the airport, itinerary introduction, and distribution of customized WeTalk shopping bags. Transfer to the hotel after airport pickup for check-in and rest (3 pm check-in).</p>
+                            <p><strong>Dinner:</strong> Welcome Dinner</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <img src="./img/little-scientist/Group 422.png" alt="Image 1">
+                    </div>
                 </div>
             </div>
         </div>
 
         <!-- Day 2 -->
-        <div class="timeline-event">
-            <span class="event-day" onclick="toggleContent(this)">DAY 02</span>
-            <h4 class="event-title" onclick="toggleContent(this)">Innovative STEM Science Class</h4>
-            <div class="row event-content">
-                <div class="col-md-8">
-                    <p><span class="text-success">Fun English Class - Lesson 1</span></p>
-                    <p><strong>Course Theme:</strong> Introduction to Coding, Understanding Code Monkey</p>
-                    <p><strong>Scientific Knowledge:</strong> Introduction to Coding Concepts</p>
-                    <p><strong>Activity expansion:</strong> On-site programming using Code Monkey/Python software for beginner-level coding.</p>
-                    <p>Visit to Landmark Buildings, including the Merlion, Esplanade Park, and more, for a panoramic view of Singapore. Experience cultural insights and traditional markets in Singapore's Chinatown, Little India, and Kampong Glam.</p>
-                    <p><strong>Evening Assignment:</strong> Organize the knowledge points learned during the day's programming class.</p>
-                </div>
-                <div class="col-md-4">
-                    <img src="path/to/image2.jpg" alt="Image 2" class="event-image">
+        <div class="timeline-event left">
+            <div class="container-xxl">
+                <div class="row align-items-start">
+                    <div class="col-md-6 text-start">
+                        <h4 class="event-title" onclick="toggleContent(this)"><span class="event-day">DAY 02</span> Innovative STEM Science Class</h4>
+                        <p><span class="text-success">Fun English Class - Lesson 1</span></p>
+                        <p><strong>Course Theme:</strong> Introduction to Coding, Understanding Code Monkey</p>
+                        <p><strong>Scientific Knowledge:</strong> Introduction to Coding Concepts</p>
+                        <p><strong>Activity expansion:</strong> On-site programming using Code Monkey/Python software for beginner-level coding.</p>
+                        <p>Visit to Landmark Buildings, including the Merlion, Esplanade Park, and more, for a panoramic view of Singapore. Experience cultural insights and traditional markets in Singapore's Chinatown, Little India, and Kampong Glam.</p>
+                        <p><strong>Evening Assignment:</strong> Organize the knowledge points learned during the day's programming class.</p>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <img src="./img/little-scientist/Group 423.png" alt="Image 2" class="img-fluid">
+                    </div>
                 </div>
             </div>
         </div>
@@ -153,26 +162,6 @@
             content.classList.toggle('show');
         }
 
-        // Function to reveal event on scroll
-        function revealEvent(entries, observer) {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const eventElement = entry.target;
-                    eventElement.classList.add('visible'); // Add slide-in effect
-                    observer.unobserve(eventElement); // Stop observing once revealed
-                }
-            });
-        }
-
-        // Create an Intersection Observer for scroll-triggered reveal
-        const observer = new IntersectionObserver(revealEvent, {
-            threshold: 0.2
-        });
-
-        // Observe each timeline-event
-        document.querySelectorAll('.timeline-event').forEach(event => {
-            observer.observe(event);
-        });
     </script>
 
     <!-- JavaScript Libraries -->
