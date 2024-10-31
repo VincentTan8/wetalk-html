@@ -399,6 +399,12 @@
     background-image: linear-gradient(to bottom, #FDF4D7, #fffde8); 
 }
 
+.gradient-background-blue {
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(to bottom, #e6feff, #D6EBFF); 
+}
+
 .content {
     display: flex;
     flex-wrap: wrap;
