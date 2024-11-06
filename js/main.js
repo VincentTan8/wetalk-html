@@ -15,6 +15,14 @@
     // Initiate the wowjs
     new WOW().init();
 
+    //Init Stellar
+    $(document).ready(function(){
+        $.stellar({
+            horizontalScrolling: false,
+            verticalScrolling: true,
+            responsive: true
+        });
+    });
 
     // Sticky Navbar
     $(window).scroll(function () {

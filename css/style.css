@@ -389,6 +389,22 @@
     background-size: cover;
 }
 
+.para {
+    will-change: transform;
+}
+
+.para-about-1 {
+    background-image: url(../img/wetalk/para-img-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.para-about-2 {
+    background-image: url(../img/wetalk/para-img-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .div-rounded {
     border-radius: 1rem;
 }
